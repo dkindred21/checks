@@ -1,0 +1,46 @@
+01/02/19  03:56 PM                       OLD WEST COMPANY INC                                   PAGE 1  
+                                            CHECK REGISTER                                              
+                                              Bank: BHFC                                                
+                                                                                                        
+ACCOUNT  ISSUED TO                      DESCRIPTION                    DOCUMENT NO  AMOUNT              
+-------- ------------------------------ ------------------------------ ------------ -------------       
+212145   ROBERT SMITH                   DISBURSE TO SELLER             C      23503       1232.68       
+                                        CONTRACT #  212145                                              
+212319   BHFCU                          CK # 133334003                 C      23504       1913.87       
+                                        VICKI KAPUST                                                    
+213215   BHFCU                          DONNA MORRIS CHECKING          C      23505        577.28       
+                                        006952085                                                       
+214162   BHFCU                          ACC# 141049002                 C      23506        210.00       
+                                        NATALIA HOLTER                                                  
+214167   BHFCU                          291479592                      C      23507        557.35       
+                                        039125088                                                       
+                                        MARVIN THOMAS ACCOUNT                                           
+214193   BHFCU                          ACC# 054460003                 C      23508        401.68       
+                                        BRIAN WURTELE                                                   
+215156   BHFCU                          ACC# 012119083                 C      23509       1600.00       
+                                        RAYMOND SIME                                                    
+215223   BHFCU                          CK# 103587003                  C      23510        324.35       
+                                        ANTHONY OR MARY IRELAND                                         
+215241   RICHARD WALKER                 DISBURSE TO SELLER             C      23511        313.20       
+                                        CONTRACT #  215241                                              
+217134   JOHN STANLY TRUST                                             C      23512        351.27       
+217146   BHFCU                          ACC# 079115002                 C      23513        576.96       
+                                        RANDALL CHRISTENSEN                                             
+217155   BHFCU                          ACC# 079115002                 C      23514        591.75       
+                                        RANDALL CHRISTENSEN                                             
+217195   PUANGTHONG JACKSON                                            C      23515        884.70       
+217196   BHFCU                          FROG PROJECTS                  C      23516        585.82       
+                                        ACC# 180382002                                                  
+218107   SHANNON BRINKER                                               C      23517       1124.35       
+218122   BHFCU                          ACC# 57516002                  C      23518       3187.50       
+                                        LORI LITZEN                                                     
+2062372  CROOK MTN ANGUS RANCH          DISBURSE TO SELLER             C      23519       1307.82       
+                                        CONTRACT # 2062372                                              
+2062591  CHARLES STERLING               DISBURSE TO SELLER             C      23520      66827.42       
+                                        CONTRACT # 2062591                                         
+                                  
+                                                                                                        
+TOTAL:                                                                                   82568.00       
+
+
+
