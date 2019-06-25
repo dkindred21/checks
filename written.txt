@@ -37,9 +37,10 @@ ACCOUNT  ISSUED TO                      DESCRIPTION                    DOCUMENT 
 2062372  CROOK MTN ANGUS RANCH          DISBURSE TO SELLER             C      23519       1307.82       
                                         CONTRACT # 2062372                                              
 2062591  CHARLES STERLING               DISBURSE TO SELLER             C      23520      66827.42       
-                                        CONTRACT # 2062591                                         
-                                  
-                                                                                                        
+                                        CONTRACT # 2062591                                           
+                             
+
+                                                                                                                                                                                                            
 TOTAL:                                                                                   82568.00       
 
 

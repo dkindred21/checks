@@ -2,7 +2,7 @@ import re
 import sqlite3
 from sqlite3 import Error
 
-file = input('What file')
+file = input('What file\n')
 ck_database = 'check_req.db'
 
 def create_connection(db_file):
@@ -33,13 +33,13 @@ def create_table(conn, create_table_sql):
 		print(e)
 		
 		
-def written_parsed(file,ck_database):
+def file_parse(file,ck_database,check):
 	conn = create_connection(ck_database)
 	try:
 		c = conn.cursor()
 	except Error as e:
 		print(e)
-	
+		
 	with open(file, 'r') as inFile:
 		for _ in range(6):
 			next(inFile)
@@ -49,19 +49,30 @@ def written_parsed(file,ck_database):
 				p_line = line[72:]
 				p_line = re.sub(' +', ' ',p_line).split()
 				new = int(p_line[0]),float(p_line[1])
-				try:										
-					c.execute('INSERT INTO written(check_no,amount)VALUES(?,?)',(new[0],new[1]))					
-				except sqlite3.IntegrityError:
-					pass
+				if check.lower() == 'written':
+					try:										
+						c.execute('INSERT INTO written(check_no,amount)VALUES(?,?)',(new[0],new[1]))					
+					except sqlite3.IntegrityError:
+						pass
+# need to adjust parsing for real bank .csv file
+				else:
+					try:
+						c.execute('INSERT INTO cashed(check_no,amount)VALUES(?,?)',(new[0],new[1]))
+					except sqlite3.IntegrityError:
+						pass
 		conn.commit()
 		
 				
-def view_db(ck_database):	
+def view_db(ck_database,check):	
 	conn = create_connection(ck_database)
 	c = conn.cursor()
-	for row in c.execute('SELECT * FROM written'):
-		print(row)
-
+	if check.lower() == 'written':
+		for row in c.execute('SELECT * FROM written'):
+			print(row)
+	else:
+		for row in c.execute('SELECT * FROM cashed'):
+			print(row)
+			
 def t_amount(ck_database):
 	conn = create_connection(ck_database)
 	c = conn.cursor()
@@ -89,9 +100,6 @@ def main():
 		create_table(conn,sql_create_cashed_table)
 	else:
 		print("Error! cannot create the database connection.")
-
-#this is a test
-#this is a test2
 	
 if 	__name__ == '__main__':
 	main()
